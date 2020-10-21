@@ -60,7 +60,7 @@ async function approveMethamask() {
           document.querySelectorAll('.locked-wallet').forEach(element=>element.parentNode.removeChild(element))
           document.getElementById('locked_wallet').parentNode.removeChild(document.getElementById('locked_wallet'))
           document.getElementById('invest').innerHTML = 'Transform'
-          document.getElementById('invest').onclick = 'invest()'
+          document.getElementById('invest').onclick = invest
           enabled = true
           return
       } catch (error) {
@@ -80,7 +80,7 @@ async function approveMethamask() {
       document.querySelectorAll('.locked-wallet').forEach(element=>element.parentNode.removeChild(element))
       document.getElementById('locked_wallet').parentNode.removeChild(document.getElementById('locked_wallet'))
       document.getElementById('invest').innerHTML = 'Transform'
-      document.getElementById('invest').onclick = 'invest()'
+      document.getElementById('invest').onclick = invest
       enabled = true
       return
   }
